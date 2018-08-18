@@ -1,0 +1,50 @@
+{
+  "name": "react_app_getting_data_via_marvel_comics_api",
+  "version": "1.0.0",
+  "description": "<h1>This App helpful you find info about heroes from database Marvel Comics</h1> <p>Created at React course for Hillel IT School</p> <p>Based on source  <a target=\"_blank\" href=\"https://github.com/inglkruiz/react-marvel-api\">ReactJS Marvel API Example</a></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base prod --debug --port 8080",
+    "build": "npm i && cross-env NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinatsafin/react_marvel_api.git"
+  },
+  "author": "Rinat Safin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rinatsafin/react_marvel_api/issues"
+  },
+  "homepage": "https://github.com/rinatsafin/react_marvel_api#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
