@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 
 import Loader from "../Loader";
-import Artist from "../Character";
+import Artist from "../Artist";
 
 class App extends React.Component {
   constructor() {

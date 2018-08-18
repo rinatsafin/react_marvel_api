@@ -7,7 +7,7 @@ const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const extractCSS = new ExtractTextPlugin("css/styles.css");
+const extractCSS = new ExtractTextPlugin("css/styles.css", { allChunks: true, });
 
 module.exports = {
   entry: "./dev/index.js",
@@ -67,6 +67,29 @@ module.exports = {
                 : "[hash:base64:12]",
             },
           },
+        }),
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: extractCSS.extract({
+          fallback: "style-loader",
+          //resolve-url-loader may be chained before sass-loader if necessary
+          use: [
+            {
+              loader: "css-loader",
+              options: {
+                sourceMap: true,
+                modules: true,
+              },
+            },
+            {
+              loader: "sass-loader",
+              options: {
+                sourceMap: true,
+              },
+            },
+          ],
         }),
       },
       {

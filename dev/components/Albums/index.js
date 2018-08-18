@@ -49,6 +49,8 @@ class Albums extends React.Component {
 
 Albums.propTypes = {
   // instance: PropTypes.object.isRequired,
+  // arr: PropTypes.instanceOf(PropTypes.Array),
+  // arr_new: PropTypes.arrayOf(PropTypes.string),
   id: PropTypes.string.isRequired,
 };
 
