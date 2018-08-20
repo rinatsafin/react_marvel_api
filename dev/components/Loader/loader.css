@@ -9,12 +9,18 @@ body {
   left: 0;
   right: 0;
   padding: 5%;
+  background: rgba(0,0,0,.3);
+  z-index: 1;
 }
 
 .loader {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   width: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .loader:before {
